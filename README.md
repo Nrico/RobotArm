@@ -55,11 +55,13 @@ Once the script is running, you can control the robot arm through the serial con
 
 ## 🧠 Motion Smoothing
 Motion is smoothed using a cubic **ease-in/ease-out** curve:
-```python
+
 ease_in_out(t) = 3t² - 2t³
 This creates natural, organic movement over a series of small interpolated steps, rather than abrupt 5° jumps.
 
-💾 Saving and Replaying Sequences
+---
+
+## 💾 Saving and Replaying Sequences
 While controlling the robot manually:
 
 Press SPACE to record key poses
@@ -70,7 +72,9 @@ Press x to replay your recorded motion
 
 Recorded motions are stored in a JSON file and include servo angles and timing.
 
-🔧 Customization
+---
+
+## 🔧 Customization
 You can expand this project to include:
 
 Remote control via BLE or WiFi
@@ -81,16 +85,22 @@ AI gesture generation or remote execution
 
 More servos (up to 16 with PCA9685!)
 
-🧪 Known Limitations
+---
+
+## 🧪 Known Limitations
 Only works over USB/serial keyboard interface
 
 Basic terminal must be used (Mu editor or screen)
 
 No safety limits beyond 0–180° range—ensure servos are mounted safely
 
-📜 License
+---
+
+## 📜 License
 MIT License — free to use, modify, and share.
 
-👤 Author
+---
+
+## 👤 Author
 Created by Enrico Trujillo
 Inspired by physical computing, artistic robotics, and open hardware education.
